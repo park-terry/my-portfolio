@@ -1,0 +1,132 @@
+@import "../../global.scss";
+
+.education {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; 
+    justify-content: center;
+}
+
+.education-title {
+    position: absolute;
+    top: 5%;
+    font-size: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include mobile {
+        top: 3%;
+        font-size: 35px;
+    }
+}
+
+.education-container {
+    position: absolute;
+    display: flex;
+    margin-top: 20px;
+
+    @include mobile {
+        margin-top: 0;
+        position: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.education-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    @include mobile {
+        flex: unset;
+        height: 30vh;
+    }
+}
+
+.education-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include mobile {
+        flex: unset;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
+.education-img {
+    transition: all 0.5s ease-out;
+}
+
+.education-sub {
+    margin: 10px 0px;
+    width: 70%;
+
+    @include mobile {
+        margin: 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2 {
+        @include mobile {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    }
+
+    p {
+        @include mobile {
+            text-align: center;
+            font-size: 12px;
+        }
+    }
+
+}
+
+.education-awards {
+    margin-top: 50px;
+    width: 70%;
+
+    @include mobile {
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+
+.education-achievements {
+    margin-bottom: 30px;
+    color: #555;
+
+    @include mobile {
+        font-size: 14px;
+    }
+}
+
+.education-awards-titles {
+    margin-top: 20px;
+    font-weight: bold;
+    color: $mainColor;
+}
+
+.education-awards-desc {
+    margin-top: 15px;
+
+    @include mobile {
+        font-size: 12px;
+    }
+}
+

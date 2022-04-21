@@ -1,0 +1,63 @@
+@import "../../global.scss";
+
+.contact {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+
+    .contact-title{
+        position: absolute;
+        top: 5%;
+        font-size: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include mobile {
+            top: 3%;
+            font-size: 35px;
+        }
+    }
+
+    .icons {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+
+        a {
+            .icon {
+                font-size: 100px;
+                border-radius: 10%;
+                color: $mainColor;
+    
+                &:hover {
+                    color: white;
+                    
+                    .icon {
+                      opacity: 0.2;
+                      z-index: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .itemContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 10%;
+
+        .icon {
+            color: $mainColor;
+        }
+    }
+}
