@@ -19,18 +19,18 @@ export default function Projects() {
     {
       id: "2",
       title: "Amazoom",
-      desc: "Amazoom Description",
+      desc: "Team of 4 worked together to build virtual Amazoom with its warehouse and user interface. I built Virtual robots that are used to move objects around the warehouse. The robots included object recognition, automated navigation, andcollision avoidance capabilities.",
       tech:"C#",
       proj:"See Source Code",
-      img: "./assets/capstone.png",
+      img: "./assets/amazoom.png",
     },
     {
       id: "3",
       title: "Virtual Quality Control Robot",
-      desc: "Virtual Quality Control Robot Description",
+      desc: "Team of 3 worked together to build a a 3.5 DOF virtual quality control robot. I designed a driver circuit using H-bridge to control different motors operating as joints. The robot included control system to move the arm to pre-assigned location using Simulink. A virtual simulation model was developed using Simulation X",
       tech:"Circuit Design/Analysis, C++, MATLAB, Simulink, SimulationX",
-      proj:"See Video",
-      img: "./assets/capstone.png",
+      proj:"See Video: https://youtu.be/P5L1cHoaK5U",
+      img: "./assets/QCRobot.png",
     },
   ];
 
