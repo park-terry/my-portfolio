@@ -11,9 +11,9 @@ export default function Projects() {
     {
       id: "1",
       title: "Wearable EEG Device",
-      desc: "Team of 4 worked together to meet the client's need for a low-noise EEG device that can be used in a research of concussionsin contact sports. I worked as a firmware designer to include accelerometer functionality and to create a wrapper library to improve usability to change any settings. I also wrote a MATLAB code that could be used for validation of the device.",
+      desc: "Capstone project: Team of 4 worked together to meet the client's need for a low-noise EEG device that can be used in a research of concussionsin contact sports. I worked as a firmware designer to include accelerometer functionality and to create a wrapper library to improve usability to change any settings. I also wrote a MATLAB code that could be used for validation of the device.",
       tech:"C++, MATLAB, Circuit Design/Analysis",
-      proj:"See Video",
+      proj:"https://www.youtube.com/watch?v=rZG6mpmFFN8&list=PLjFm8PBGO0F8R7bRY151yyy9ZPIW3Z2_F&index=6",
       img: "./assets/capstone.png",
     },
     {
@@ -29,7 +29,7 @@ export default function Projects() {
       title: "Virtual Quality Control Robot",
       desc: "Team of 3 worked together to build a a 3.5 DOF virtual quality control robot. I designed a driver circuit using H-bridge to control different motors operating as joints. The robot included control system to move the arm to pre-assigned location using Simulink. A virtual simulation model was developed using Simulation X",
       tech:"Circuit Design/Analysis, C++, MATLAB, Simulink, SimulationX",
-      proj:"See Video: https://youtu.be/P5L1cHoaK5U",
+      proj:"https://youtu.be/P5L1cHoaK5U",
       img: "./assets/QCRobot.png",
     },
   ];
@@ -80,7 +80,7 @@ export default function Projects() {
                   <h2>{d.title}</h2>
                   <p className="p1">{d.desc}</p>
                   <p className="p2">Highlights: {d.tech}</p>
-                  <span>{d.proj}</span> 
+                  <a href={d.proj} target="_blank">See Video</a> 
                 </div>
               </div>
               <div className="right">

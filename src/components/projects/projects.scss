@@ -119,11 +119,12 @@
                         }
                      }
 
-                     span {
+                     a {
                          font-size: 14px;
                          font-weight: 600;
                          text-decoration: underline;
                          cursor: pointer;
+                         color: inherit;
 
                          &:hover {
                             font-weight: 800;
